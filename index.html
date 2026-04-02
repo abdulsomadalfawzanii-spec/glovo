@@ -1,12 +1,464 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tailwind</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glovo: whatever you order,in minutes!</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADl0lEQVR4AZyWA5BkMRCG52zbtm3btm3bRvFsr20bZ9u2bfX92cumRp1V1VebeWkF3WlDQn8U01qQBlQFs4AvuAu+ApJ8ld98pUxVqaM3nkjHjcF+8Aj8BqRDyjySOo2ZQPSOJUXBRvAGUDJ5I20UlTYT7bwROM4ajm0V9/9XdBuByTeG49KmDELvvB24Y91QK3od2YFcA/vTVM9x1N11KphGkz3Gk3PgAHqFOchwQdyRtg2Add6Yc/4HBAX3ocZOsyjtoRVkOLDKhDT41tBpNvkF9RWyuiAaWwRhdObHuG10DBhA+WyX/Hd4cKVEjE1/54bMoYBBuuM4ZnIn5CA12Mht+4nQHlTUbpFwoBxlPLScytgviCMTxsZzhWwX09GQnrrj2CR9qgCagNfWhH/ikg12m2yy8vqOc8g7qB89iexIT4E/th1Ho+aF7AC3KfQDukwAr6VPQ/zq93GrvxrelQraLlarq2A/ny6HdTW99RjfCO9CVR3mqZ0oAB3IsbsgfaYWAVQDD7l088CNT31ohQpghfco60Yhu95nhNqF1AdXkDt0ufSUPqsZZOn8zQWw13+wMpoSRpFu1o3imxeORQULoKsL4DeYJQLw0RUch4CBcAyDko2+w9gAdvoNIRUsgK6SZfA1yEeEdBmQ3WapOoJmuGyvojpYyL6Jak+tnWeoOyB0jkNXHhfHXYN61Rg+RrWjls4zVRakBMtxD/6YFalV3iMplVEWNEegH6CLeR1fDVoBuQtOKELIe7W9ubC6AKSemBMEo0KiAKl5yIrt169eog9A8h35PN5jgknFq4Na8CCiEz1GHUBdMClEo90n0rfotlJfj+4ITHbhPpzVNXYERsHRWLPAajrOpbsRnfnVm/JVXcLEBBEY1Edsv0mupwHxv3NgzlcdTevEcJdNQ+5FxAU0SUvjtFvkNZp+M7oMvkwh4nmNdOvgMt3iFWyDFHwZ2YHX5QsRX4q5ozgV2l28guo5Lmm/kI7pc54vxfrHiOdcWHfa7jeUtoEzCOgvL6t/jPTPMc+n6HYUFtxbIMZ6ef1zzDckfF1oSxPRB4rWTDABY3zT6fANCd+S8XfgTnhnKmK7WN2BwhjfDu+iuwN8S8Y3pTyi+23gOBs1f7VAVELxTavDN6XatpxH9HxD3SfFcQRjivk3uBwxzXJKOiaIqPgLKZxgQU9Gx4Rw12wiFbpmE5HinO6dU1tq9pL1Seie6xNrMQAygOhvG9fvswAAAABJRU5ErkJggg=="
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <h1 class="text-[30px] font-black italic font-[helvetica]" >hello world</h1>
-</body>
+  </head>
+  <body>
+    <nav
+      class="bg-yellow-400 flex items justify-between px-10 py-2 items-center sticky inset-0 z-1"
+    >
+      <img src="download-removebg-preview (2).png" alt="" />
+
+     <a href=""><button class="text-indigo-50 bg-green-900 w-[100px] h-[50px] rounded-full">
+        👤Login
+      </button></a> 
+    </nav>
+    <section class="bg-yellow-400">
+      <div class="flex items">
+        <video
+          src="https://glovoapp.com/animations/address-container-animation.webm"
+          autoplay
+          loop
+          class="ml-[100px]"
+        ></video>
+        <div>
+          <p class="font-bold text-[60px]">
+            Food delivery and <br />
+            more
+          </p>
+          <p class="text-[30px] font-bold">
+            Groceries, shops, pharmacies, anything!
+          </p>
+          <div
+            class="flex-1 outline-none text-gray-400 bg-[white] flex rounded-lg"
+          >
+            <input
+              type="text"
+              placeholder="what is your address?"
+              class="flex-1 h-15"
+            />
+            <button
+              class="bg-green-100 rounded-full py-2 px-5 hover:bg-green-200 transition"
+            >
+              use current location
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <p class="text-center font-bold text-[40px]">
+        Top restaurants and more in Glovo
+      </p>
+      <section class="grid grid-cols-4 gap-4 mt-10">
+        <div class="reletive">
+          <img
+            src="https://glovo.dhmedia.io/image/customer-assets-glovo/countries/Stores/bghikwl7kiy5zyytrhp3"
+            alt=""
+            class="w-40 h-40 rounded-full"
+          />
+          <p class="absolute bottom -[-20px] left-10  bg-yellow-200 mb- 40">
+            McDonald's
+          </p>
+        </div>
+        <div class="reletive">
+          <img
+            src="https://glovo.dhmedia.io/image/customer-assets-glovo/countries/Stores/KFC_top_partner.png"
+            alt=""
+            class="w-40 h-40 rounded-full"
+          />
+          <p class="absolute bg-yellow-200 bottom- 2 ml-15">KFC's</p>
+        </div>
+
+        <div class="reletive">
+          <img
+            src="https://glovo.dhmedia.io/image/customer-assets-glovo/countries/Stores/htnphwqorq4rl3zhcr1z"
+            alt=""
+            class="w-40 h-40 rounded-full"
+          />
+          <p class="absolute bg-yellow-200 bottom- 2 ml-15">BurgerKing's</p>
+        </div>
+        <div class="reletive">
+          <img
+            src="https://glovo.dhmedia.io/image/customer-assets-glovo/countries/Stores/hvpjrukzrzcx2fr7aivr"
+            alt=""
+            class="w-40 h-40 rounded-full"
+          />
+          <p class="absolute bg-yellow-200 bottom- 2 ml-15">Carrefour's</p>
+        </div>
+        <div class="reletive">
+          <img
+            src="https://glovo.dhmedia.io/image/customer-assets-glovo/countries/Stores/ytwytqxp9iracoscs2jf"
+            alt=""
+            class="w-40 h-40 rounded-full"
+          />
+          <p class="absolute bg-yellow-200 bottom- 2 ml-15">PizzaHut's</p>
+        </div>
+        <div class="reletive">
+          <img
+            src="https://glovo.dhmedia.io/image/customer-assets-glovo/countries/Stores/igq1ghjtalh1hzzu3wx1.png"
+            alt=""
+            class="w-40 h-40 rounded-full"
+          />
+          <p class="absolute bg-yellow-200 bottom- 2 ml-15">Papa John's's</p>
+        </div>
+        <div class="reletive">
+          <img
+            src="https://glovo.dhmedia.io/image/customer-assets-glovo/countries/Stores/fgxofdbzk1n0mpxqfxwu"
+            alt=""
+            class="w-40 h-40 rounded-full"
+          />
+          <p class="absolute bg-yellow-200 bottom- 2 ml-15">Subway's</p>
+        </div>
+        <div class="reletive">
+          <img
+            src="https://glovo.dhmedia.io/image/customer-assets-glovo/countries/Stores/grdqndkujhpgjt88ionz"
+            alt=""
+            class="w-40 h-40 rounded-full"
+          />
+          <p class="absolute bg-yellow-200 bottom- 2 ml-15">TacoBell's</p>
+        </div>
+      </section>
+      <p class="text-center font-bold text-[40px] mt-[70px]">
+        Anything delivered
+      </p>
+    </section>
+    <section class="grid grid-cols-3 gap-3 mt-10 ml-50 mr-40">
+      <div>
+        <img
+          src="https://glovoapp.com/_next/static/media/restaurants.e082f46b.svg"
+          alt=""
+        />
+        <p class="mb-5 font-bold text-[25px]">
+          Your city's top <br />
+          restaurants
+        </p>
+
+        <p class="mt[50px]">
+          With a great variety of restaurants you <br />
+          can order your favourite food or <br />
+          <span class="bg-yellow-500 rounded-xl">
+            explore new restaurants nearby!</span
+          >
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://glovoapp.com/_next/static/media/delivery.81e9087f.svg"
+          alt=""
+        />
+        <p class="mb-5 font-bold text-[25px]">Fast delivery</p>
+        <p>
+          Like a flash! Order or send anything in <br />
+          your city and
+          <span class="bg-yellow-500 rounded-xl"> receive it in minutes</span>
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://glovoapp.com/_next/static/media/groceries.3dd22a11.svg"
+          alt=""
+        />
+        <p class="mb-5 font-bold text-[25px]">Groceries delivery & more</p>
+        <p text-[10px]>
+          Find anything you need! From <br />
+         <span class="bg-yellow-500 rounded-xl"> supermarkets to shops, pharmacies to <br />
+          florists</span> — if it's in your city order it <br />
+          and receive it.
+        </p>
+      </div>
+    </section>
+    <button
+      class="bg-green-800 rounded-full px-4 py-4 text-white -400 font-bold text-[10p] mx-[500px] mt-10 "
+    >
+      Explore stores around you
+    </button>
+    <section class="bg-yellow-400 mt-10">
+      <div>
+        <img
+          src="https://glovoapp.com/_next/static/media/countries.1afbc7fb.svg"
+          alt=""
+          class="mx-[550px] mt-10 pt-[40px]"
+        />
+        <p class="font-bold text-[45px] text-center">
+          Countries where we deliver
+        </p>
+      </div>
+      <div class="grid grid-cols-7 mt-10 mx-[200px]">
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-20 text-center font-bold t-[20px]"
+        >
+          spain
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-20 text-center font-bold t-[20px]"
+        >
+          italy
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+        >
+          ukraine
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+        >
+          romania
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+        >
+          georgia
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-23 text-center font-bold t-[20px]"
+        >
+          portugal
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-20 text-center font-bold t-[20px]"
+        >
+          poland
+        </p>
+      </div>
+      <div class="grid grid-cols-6 mt-10 mx-[200px]">
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+        >
+          morocco
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-28 text-center font-bold t-[20px]"
+        >
+          kazakhstan
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+        >
+          croatia
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+        >
+          kenya
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-5 py-2 w-35 text-center font-bold t-[20px]"
+        >
+          côte D'ivoire
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-3 py-2 w-22 text-center font-bold t-[20px]"
+        >
+          serbia
+        </p>
+      </div>
+      <div class="grid grid-cols-5 mt-10 mx-[200px]">
+        <p
+          class="bg-white rounded-full gap-2 px-3 py-2 w-22 text-center font-bold t-[20px]"
+        >
+          moldova
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-3 py-2 w-22 text-center font-bold t-[20px]"
+        >
+          uganda
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-3 py-2 w-25 text-center font-bold t-[20px]"
+        >
+          kyrgyzstan
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-3 py-2 w-40 text-center font-bold t-[20px]"
+        >
+          Bosnia and herzegovina
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-3 py-2 w-25 text-center font-bold t-[20px]"
+        >
+          bulgaria
+        </p>
+      </div>
+      <div class="grid grid-cols-5 mt-10 mx-[200px]">
+        <p
+          class="bg-white rounded-full gap-2 px-3 py-2 w-30 text-center font-bold t-[20px]"
+        >
+          montenegoro
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-3 py-2 w-30 text-center font-bold t-[20px]"
+        >
+          Nigeria
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-3 py-2 w-30 text-center font-bold t-[20px]"
+        >
+          Armenia
+        </p>
+        <p
+          class="bg-white rounded-full gap-2 px-3 py-2 w-30 text-center font-bold t-[20px]"
+        >
+          Tunisia
+        </p>
+      </div>
+    </section>
+    <section class="flex">
+      <div class="w-[50%]">
+        <img
+          src="https://glovoapp.com/_next/static/media/download-icon.475cc763.svg "
+          alt=""
+          class="ml-70 mt-[100px]"
+        />
+        <h1 class="ml-40 font-bold text-[40px]">Download the app</h1>
+        <p class="ml-25">
+          Order anything and track it in real time with the Glovo app.
+        </p>
+        <div class="flex gap-7 ml-45 mt-10">
+          <a href="">
+            <img
+              src="https://glovoapp.com/_next/static/media/ios-button.33217f86.svg"
+              alt=""
+            />
+          </a>
+          <a href="">
+            <img
+              src="https://glovoapp.com/_next/static/media/google-button.4b60c502.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <div class="w-[50%]">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/54222358e4b0ef23d87a996b/982ec9b9-304b-48da-971a-054b188bb182/3.png?format=1000w"
+          alt=""
+        />
+      </div>
+    </section>
+    <section>
+      <img
+        src="https://glovoapp.com/_next/static/media/hands.1b6e6913.svg"
+        alt=""
+        class="ml-130"
+      />
+      <h1 class="font-bold text-[40px] text-center">Let’s do it together</h1>
+      <div class="grid grid-cols-3 px-30">
+        <div class="text-center">
+          <img
+            src="https://glovoapp.com/_next/static/media/rider-blob.814d824f.png"
+            alt=""
+            class="w-50 ml-20"
+          />
+          <p class="font-bold text-[30px] text-center">Become a rider</p>
+          <p>
+            Enjoy flexibility, freedom and competitive <br />
+            earnings by delivering through Glovo.
+          </p>
+          <button
+            class="bg-green-900 px-5 py-3 rounded-full text-white font-bold text-[20px] mt-7"
+          >
+            Register here
+          </button>
+        </div>
+        <div class="text-center">
+          <img
+            src="https://glovoapp.com/_next/static/media/partners-blob.d648b664.png"
+            alt=""
+            class="w-50 ml-20"
+          />
+          <p class="font-bold text-[30px]">Become a partner</p>
+          <p>
+            Grow with Glovo! Our technology <br />
+            and user base can help you boost sales and <br />
+            unlock new opportunities!
+          </p>
+          <button
+            class="bg-green-900 px-5 py-3 rounded-full text-white font-bold text-[20px] mt-7"
+          >
+            Register here
+          </button>
+        </div>
+        <div class="text-center">
+          <img
+            src="https://glovoapp.com/_next/static/media/careers-blob.69ed0155.png"
+            alt=""
+            class="w-50 ml-15"
+          />
+          <p class="font-bold text-[30px]">Careers</p>
+          <p>
+            Ready for an exciting new challenge? If <br />
+            you’re ambitious, humble, and love <br />working with others, then
+            we want to <br />hear from you!
+          </p>
+          <button
+            class="bg-green-900 px-5 py-3 rounded-full text-white font-bold text-[20px] mt-7 mb-5"
+          >
+            Register here
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-black">
+      <div class="bg-black w-40 ml-15">
+        <img src="download__1_-removebg-preview.png" alt="" />
+      </div>
+      <div class="grid grid-cols-3">
+        <div class="text-white bg-black ml-20 mt-10" >
+          <p class="font-bold text-[20px] ml-9">Let’s do it together</p>
+          <ul class="ml-20 mt-5">
+            <li class="mb-2"><a href="">Careers</a></li>
+            <li class="mb-2"><a href="">Glovo for Partner</a></li>
+
+            <li class="mb-2"><a href="">Couriers</a></li>
+            <li class="mb-2"><a href="">Glovo business</a></li>
+          </ul>
+        </div>
+        <div class="bg-black ml-35 mt-10">
+          <p class="bg-black text-white font-bold text-[20px]">
+            Links of interest
+          </p>
+          <ul class="bg-black text-white text-[hover:underline] ml-10 ">
+            <li class="mb-2"><a href="">About us</a></li>
+            <li class="mb-2"><a href="">FAQ</a></li>
+            <li class="mb-2"><a href="">Blogs</a></li>
+            <li class="mb-2"><a href="">Contact us</a></li>
+            <li class="mb-2"><a href="">Security</a></li>
+            <li class="mb-2 "><a href="">Log in</a></li>
+          </ul>
+        </div>
+        <div class="text-white">
+          <a href=""
+            ><img
+              src="https://glovoapp.com/images/app_store/download-button-new.svg"
+              alt=""
+              class="mb-6 ml-50"
+          /></a>
+          <a href=""
+            ><img
+              src="https://glovoapp.com/images/google_play/download-button-new.svg"
+              alt=""
+              class="ml-50 mb-10"
+          /></a>
+          <p class="text-[20px] ml-50" mb-10>Terms & Condition</p>
+          <p class="ml-50 mb-2">Privacy Policy</p>
+          <p class="ml-50 mb-2">Cookies policy</p>
+          <p class="ml-50 mb-2">Compliance</p>
+          <p class="ml-50 mb-2">Configure the cookies</p>
+          <p class="ml-50 mb-2">Digital Services Act</p>
+          <p class="ml-50 mb-2">European Accessibility Act</p>
+        </div>
+        <p class="p-2 py-4 px-2 w-55 ml-20 border mb-15 text-white">English</p>
+      </div>
+    </footer>
+  </body>
 </html>
