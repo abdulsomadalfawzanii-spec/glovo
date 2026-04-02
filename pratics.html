@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <nav class="flex justify-between items-center p-5 bg-white shadow-md">
+      <h1 class="text-2xl font-bold text-blue-600">MyBrand</h1>
+      <ul class="flex gap-6 font-medium">
+        <li><a href="#" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#" class="hover:text-blue-600">About</a></li>
+        <li><a href="#" class="hover:text-blue-600">Services</a></li>
+        <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section
+      class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white"
+    >
+      <h2 class="text-5xl font-bold mb-4">Build Something Amazing</h2>
+      <p class="text-lg mb-6">
+        Create beautiful websites with Tailwind CSS easily.
+      </p>
+      <button
+        class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+      >
+        Get Started
+      </button>
+    </section>
+
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-10">Features</h3>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Fast</h4>
+          <p>Tailwind helps you build fast with utility-first classes.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Responsive</h4>
+          <p>Your website will look good on all devices automatically.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Customizable</h4>
+          <p>Easily change styles without writing extra CSS.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-blue-600 text-white text-center py-16">
+      <h3 class="text-3xl font-bold mb-4">Ready to Start?</h3>
+      <p class="mb-6">Join us and build your dream website today.</p>
+      <button
+        class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+      >
+        Join Now
+      </button>
+      <button class="transform transition hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
+  click me
+</button>
+    </section>
+
+    <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+      <p>&copy; 2026 MyBrand. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
