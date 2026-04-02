@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glovo: whatever you order,in minutes!</title>
+    <link rel="stylesheet" href="glove-login.html">
     <link
       rel="icon"
       type="image/png"
@@ -16,11 +17,15 @@
     <nav
       class="bg-yellow-400 flex items justify-between px-10 py-2 items-center sticky inset-0 z-1"
     >
-      <img src="download-removebg-preview (2).png" alt="" />
+      <img src="download-removebg-preview (2).png" alt="" class="sm:text-2xl" />
 
-     <a href=""><button class="text-indigo-50 bg-green-900 w-[100px] h-[50px] rounded-full">
-        👤Login
-      </button></a> 
+      <a href="glove-login.html"
+        ><button
+          class="text-indigo-50 bg-green-800 w-[100px] h-[50px] rounded-full transition delay-150 duration-300 hover:-translate-y-1 hover:bg-green-900"
+        >
+          👤Login
+        </button></a
+      >
     </nav>
     <section class="bg-yellow-400">
       <div class="flex items">
@@ -47,7 +52,7 @@
               class="flex-1 h-15"
             />
             <button
-              class="bg-green-100 rounded-full py-2 px-5 hover:bg-green-200 transition"
+              class="bg-green-100 rounded-full py-2 px-5 hover:bg-green-200 transition delay-150 duration-800"
             >
               use current location
             </button>
@@ -59,14 +64,14 @@
       <p class="text-center font-bold text-[40px]">
         Top restaurants and more in Glovo
       </p>
-      <section class="grid grid-cols-4 gap-4 mt-10">
+      <section class="grid grid-cols-4 gap-4 mt-10 ml-25">
         <div class="reletive">
           <img
             src="https://glovo.dhmedia.io/image/customer-assets-glovo/countries/Stores/bghikwl7kiy5zyytrhp3"
             alt=""
             class="w-40 h-40 rounded-full"
           />
-          <p class="absolute bottom -[-20px] left-10  bg-yellow-200 mb- 40">
+          <p class="absolute bottom-[-360px] left-10 bg-yellow-200 mb-40 ml-22">
             McDonald's
           </p>
         </div>
@@ -76,7 +81,7 @@
             alt=""
             class="w-40 h-40 rounded-full"
           />
-          <p class="absolute bg-yellow-200 bottom- 2 ml-15">KFC's</p>
+          <p class="absolute bottom-[-200px] bg-yellow-200 ml-15">KFC's</p>
         </div>
 
         <div class="reletive">
@@ -85,7 +90,9 @@
             alt=""
             class="w-40 h-40 rounded-full"
           />
-          <p class="absolute bg-yellow-200 bottom- 2 ml-15">BurgerKing's</p>
+          <p class="absolute bg-yellow-200 bottom-[-200px] ml-10">
+            BurgerKing's
+          </p>
         </div>
         <div class="reletive">
           <img
@@ -93,7 +100,9 @@
             alt=""
             class="w-40 h-40 rounded-full"
           />
-          <p class="absolute bg-yellow-200 bottom- 2 ml-15">Carrefour's</p>
+          <p class="absolute bg-yellow-200 bottom-[-200px] ml-15">
+            Carrefour's
+          </p>
         </div>
         <div class="reletive">
           <img
@@ -101,7 +110,7 @@
             alt=""
             class="w-40 h-40 rounded-full"
           />
-          <p class="absolute bg-yellow-200 bottom- 2 ml-15">PizzaHut's</p>
+          <p class="absolute bg-yellow-200 bottom-[-370px] ml-10">PizzaHut's</p>
         </div>
         <div class="reletive">
           <img
@@ -109,7 +118,9 @@
             alt=""
             class="w-40 h-40 rounded-full"
           />
-          <p class="absolute bg-yellow-200 bottom- 2 ml-15">Papa John's's</p>
+          <p class="absolute bg-yellow-200 bottom-[-370px] ml-10">
+            Papa John's's
+          </p>
         </div>
         <div class="reletive">
           <img
@@ -117,7 +128,7 @@
             alt=""
             class="w-40 h-40 rounded-full"
           />
-          <p class="absolute bg-yellow-200 bottom- 2 ml-15">Subway's</p>
+          <p class="absolute bg-yellow-200 bottom-[-370px] ml-15">Subway's</p>
         </div>
         <div class="reletive">
           <img
@@ -125,7 +136,7 @@
             alt=""
             class="w-40 h-40 rounded-full"
           />
-          <p class="absolute bg-yellow-200 bottom- 2 ml-15">TacoBell's</p>
+          <p class="absolute bg-yellow-200 bottom-[-370px] ml-15">TacoBell's</p>
         </div>
       </section>
       <p class="text-center font-bold text-[40px] mt-[70px]">
@@ -171,18 +182,21 @@
         <p class="mb-5 font-bold text-[25px]">Groceries delivery & more</p>
         <p text-[10px]>
           Find anything you need! From <br />
-         <span class="bg-yellow-500 rounded-xl"> supermarkets to shops, pharmacies to <br />
-          florists</span> — if it's in your city order it <br />
+          <span class="bg-yellow-500 rounded-xl">
+            supermarkets to shops, pharmacies to <br />
+            florists</span
+          >
+          — if it's in your city order it <br />
           and receive it.
         </p>
       </div>
     </section>
     <button
-      class="bg-green-800 rounded-full px-4 py-4 text-white -400 font-bold text-[10p] mx-[500px] mt-10 "
+      class="bg-green-700 rounded-full px-4 py-4 text-white -400 font-bold text-[10p] mx-[500px] mt-10 hover:bg-green-900 transition delay-150 duration-300"
     >
       Explore stores around you
     </button>
-    <section class="bg-yellow-400 mt-10">
+    <section class="bg-yellow-400 mt-10 h-[600px] ">
       <div>
         <img
           src="https://glovoapp.com/_next/static/media/countries.1afbc7fb.svg"
@@ -193,120 +207,110 @@
           Countries where we deliver
         </p>
       </div>
-      <div class="grid grid-cols-7 mt-10 mx-[200px]">
+      <div class="flex mt-10 gap-8 ml-[240px]">
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-20 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-20 text-center font-bold t-[20px] hover:bg-gray-200 transition delay-150 duration-200"
         >
           spain
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-20 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-20 text-center font-bold t-[20px] hover:bg-gray-200 transition delay-150 duration-200"
         >
           italy
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]hover:bg-gray-200 transition delay-150 duration-200"
         >
           ukraine
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]hover:bg-gray-200 transition delay-150 duration-200"
         >
           romania
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]hover:bg-gray-200 transition delay-150 duration-200"
         >
           georgia
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-23 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-23 text-center font-bold t-[20px]hover:bg-gray-200 transition delay-150 duration-200"
         >
           portugal
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-20 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-20 text-center font-bold t-[20px]hover:bg-gray-200 transition delay-150 duration-200"
         >
           poland
         </p>
       </div>
-      <div class="grid grid-cols-6 mt-10 mx-[200px]">
+      <div class="flex gap-8 mt-10 mx-[250px]">
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px] hover:bg-gray-200 transition delay-150 duration-200"
         >
           morocco
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-28 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-28 text-center font-bold t-[20px] hover:bg-gray-200 transition delay-150 duration-200"
         >
           kazakhstan
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px] hover:bg-gray-200 transition delay-150 duration-200"
         >
           croatia
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-22 text-center font-bold t-[20px]hover:bg-gray-200 transition delay-150 duration-200"
         >
           kenya
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-5 py-2 w-35 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-5 py-2 w-35 text-center font-bold t-[20px]hover:bg-gray-200 transition delay-150 duration-200"
         >
           côte D'ivoire
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-3 py-2 w-22 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-3 py-2 w-22 text-center font-bold t-[20px]hover:bg-gray-200 transition delay-150 duration-200"
         >
           serbia
         </p>
       </div>
-      <div class="grid grid-cols-5 mt-10 mx-[200px]">
-        <p
-          class="bg-white rounded-full gap-2 px-3 py-2 w-22 text-center font-bold t-[20px]"
-        >
+      <div class="flex gap-8 mt-5 mx-[250px]">
+        <p class="bg-white rounded-full px-3 py-2 text-center font-bold">
           moldova
         </p>
-        <p
-          class="bg-white rounded-full gap-2 px-3 py-2 w-22 text-center font-bold t-[20px]"
-        >
+        <p class="bg-white rounded-full px-3 py-2 text-center font-bold">
           uganda
         </p>
-        <p
-          class="bg-white rounded-full gap-2 px-3 py-2 w-25 text-center font-bold t-[20px]"
-        >
+        <p class="bg-white rounded-full px-3 py-2 text-center font-bold">
           kyrgyzstan
         </p>
-        <p
-          class="bg-white rounded-full gap-2 px-3 py-2 w-40 text-center font-bold t-[20px]"
-        >
+        <p class="bg-white rounded-full px-3 py-2  font-bold">
           Bosnia and herzegovina
         </p>
-        <p
-          class="bg-white rounded-full gap-2 px-3 py-2 w-25 text-center font-bold t-[20px]"
-        >
+        <p class="bg-white rounded-full px-3 py-2 text-center font-bold">
           bulgaria
         </p>
       </div>
-      <div class="grid grid-cols-5 mt-10 mx-[200px]">
+      <div class="flex gap-8 mt-5 mx-[350px]">
         <p
-          class="bg-white rounded-full gap-2 px-3 py-2 w-30 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-3 py-2 text-center font-bold t-[20px]"
         >
           montenegoro
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-3 py-2 w-30 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-3 py-2 text-center font-bold t-[20px]"
         >
           Nigeria
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-3 py-2 w-30 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-3 py-2 text-center font-bold t-[20px]"
         >
           Armenia
         </p>
         <p
-          class="bg-white rounded-full gap-2 px-3 py-2 w-30 text-center font-bold t-[20px]"
+          class="bg-white rounded-full gap-2 px-3 py-2 text-center font-bold t-[20px]"
         >
           Tunisia
         </p>
@@ -365,7 +369,7 @@
             earnings by delivering through Glovo.
           </p>
           <button
-            class="bg-green-900 px-5 py-3 rounded-full text-white font-bold text-[20px] mt-7"
+            class="bg-green-800 px-5 py-3 rounded-full text-white font-bold text-[20px] mt-7 hover:bg-green-900 transition delay-50 duration-500"
           >
             Register here
           </button>
@@ -383,7 +387,7 @@
             unlock new opportunities!
           </p>
           <button
-            class="bg-green-900 px-5 py-3 rounded-full text-white font-bold text-[20px] mt-7"
+            class="bg-green-800 px-5 py-3 rounded-full text-white font-bold text-[20px] mt-7 hover:bg-green-900 transition delay-50 duration-500"
           >
             Register here
           </button>
@@ -401,7 +405,7 @@
             we want to <br />hear from you!
           </p>
           <button
-            class="bg-green-900 px-5 py-3 rounded-full text-white font-bold text-[20px] mt-7 mb-5"
+            class="bg-green-800 px-5 py-3 rounded-full text-white font-bold text-[20px] mt-7 mb-5 hover:bg-green-900 transition delay-50 duration-500"
           >
             Register here
           </button>
@@ -413,7 +417,7 @@
         <img src="download__1_-removebg-preview.png" alt="" />
       </div>
       <div class="grid grid-cols-3">
-        <div class="text-white bg-black ml-20 mt-10" >
+        <div class="text-white bg-black ml-20 mt-10">
           <p class="font-bold text-[20px] ml-9">Let’s do it together</p>
           <ul class="ml-20 mt-5">
             <li class="mb-2"><a href="">Careers</a></li>
@@ -427,13 +431,13 @@
           <p class="bg-black text-white font-bold text-[20px]">
             Links of interest
           </p>
-          <ul class="bg-black text-white text-[hover:underline] ml-10 ">
+          <ul class="bg-black text-white text-[hover:underline] ml-10">
             <li class="mb-2"><a href="">About us</a></li>
             <li class="mb-2"><a href="">FAQ</a></li>
             <li class="mb-2"><a href="">Blogs</a></li>
             <li class="mb-2"><a href="">Contact us</a></li>
             <li class="mb-2"><a href="">Security</a></li>
-            <li class="mb-2 "><a href="">Log in</a></li>
+            <li class="mb-2"><a href="">Log in</a></li>
           </ul>
         </div>
         <div class="text-white">
